@@ -7,11 +7,26 @@ $ npm install
  ** **Secciones de la página principal:**  **
 
 1-  Menu (logo)
-2-  Información (Estadísticas financieras)
-3-  Inventario (Administrar productos)
+2-  Ventas
+3-  Inventario (Administrar productos), (Estadísticas financieras)
 
 
-Menu
+Menu: {
+    -Iniciar venta
+    -Resumen de ventas
+    -Inventario
+
+    -Cuenta/ajustes
+    -Inventario
+}
+
+Vender: {
+    -Predictivo buscador    
+    -Resumen de esta venta
+
+    -Ver descuentos disponibles
+    -
+}
 
 
 ************ **USUARIOS** ***********
@@ -21,12 +36,12 @@ ADMINISTRADOR - Dueño
 -Ver ganancias y presupuestos
 -Ver historial de ventas del día
 -Añadir y eliminar empleados
-
+-Cambiar el precio enmedio de una venta.
 -Todo los los permisos del empleado.
 
 
 
-EMPLEADOS
+EMPLEADOS - funciones:
 
 -Vender
 -Imprimir
@@ -42,6 +57,7 @@ EMPLEADOS
 
 -Administrar existencias
 -Generar Facturas impresas y digitales.
+-Hacer ventas con un buscador predictivo
 -
 
 
@@ -50,3 +66,8 @@ EMPLEADOS
 2- Base de datos
 3- Servidor en NodeJS
 4- Imprimir tickets
+
+********** **git-branches** **********
+-Develop: Rama de desarrollo.
+-Experimental: Rama experimental
+-Master: Rama de PRODUCCIÓN.

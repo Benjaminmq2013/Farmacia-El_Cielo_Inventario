@@ -1,11 +1,65 @@
+figure{
+    margin: 0;
+}
 #footer {
     background: linear-gradient(90deg,#1c3643,#273b47 25%,#1e5372);
 }
 
-#header img {
-width: 80px;
+.bd-indigo-200{
+    background-color:#6ea8fe;
 }
 
-.main{
+header ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
     
+    height: 100%;
+    align-items: flex-end;
+}
+.background-custom{
+    background-color: rgb(3,143, 244)
+}
+
+body{
+    height: 100vh !important;
+}
+.main_buttons{
+    background-color: rgb(247, 247, 247);  
+    width: 190px;  
+    border-radius: 10px;
+    height: 100%!important;
+}
+/*
+.main_buttons:hover{
+    
+}*/
+.active_menu{
+    box-shadow: 0px 0px 6px rgb(41, 121, 196);  
+    background-color: rgb(13,110, 253);
+    border: 1px solid rgb(13, 98, 224);
+    /*border: 2px solid rgb(247, 247, 247);  opcional*/
+    color: white;
+}
+.active_menu:hover{
+    color: white;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+header{
+    box-shadow: 0px 0px 6px grey;
+}
+
+/****************  Contenido Principal  ****************/
+
+
+/* Panel lateral Izquierdo */
+.fila_lateral{
+    border-bottom: 1px solid rgb(158, 158, 158);
 }

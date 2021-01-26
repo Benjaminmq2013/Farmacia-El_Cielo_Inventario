@@ -1,7 +1,7 @@
 ******* **Pre-requisitos:** ********
 
 $ npm install
-
+$ bootstrap
 
 
  ** **Secciones de la página principal:**  **

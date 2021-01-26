@@ -28,12 +28,15 @@ body{
     background-color: rgb(247, 247, 247);  
     width: 190px;  
     border-radius: 10px;
-    height: 100%!important;
+    height: 100%;
+    border: 2px solid transparent;
 }
-/*
+
 .main_buttons:hover{
-    
-}*/
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+}
 .active_menu{
     box-shadow: 0px 0px 6px rgb(41, 121, 196);  
     background-color: rgb(13,110, 253);
@@ -53,7 +56,9 @@ footer{
 }
 
 header{
-    box-shadow: 0px 0px 6px grey;
+    box-shadow: 0 2px 6px 0 rgb(0 0 0 / 12%);
+    position: relative;
+    z-index: 3;
 }
 
 /****************  Contenido Principal  ****************/
@@ -61,5 +66,65 @@ header{
 
 /* Panel lateral Izquierdo */
 .fila_lateral{
-    border-bottom: 1px solid rgb(158, 158, 158);
+    border-bottom: 1px solid rgb(207, 207, 207);
+    cursor: pointer; 
+    transition: .3s; 
+    transition-timing-function: linear;  
 }
+.fila_lateral:hover{
+    background-color:  #e8eaed; 
+    transition: 0.2s;
+}
+.lateral_panel-icon{
+    height: 40px;
+    margin: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.left_panel-container{
+    background-color: #f5f5f5;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0px 0px 4px rgb(196, 196, 196);
+}
+.lateral_panel-icon img{
+    height: 100%;
+}
+
+
+
+
+/* Estilos del menú Principal. */
+.main_menu-container{
+    margin: 5% 15% 5% 6%;
+}
+
+.menu_button{
+    height: 120px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.menu_button img{
+    height: 100%;
+}
+
+.main_buttons-title{
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(12, 12, 12);
+}
+
+
+.main_logo{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 8%;
+    margin-right: 8%;
+}
+
+
+/* ESTILOS DE LA PLANTILLA DE VENTAS */
+

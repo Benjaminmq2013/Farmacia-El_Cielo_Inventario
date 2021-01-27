@@ -82,14 +82,23 @@ header{
     cursor: pointer;
 }
 
+.lateral_panel-icon img{
+    height: 90%;
+}
+
+#logout_lateral_icon-image{
+    height: 85%;
+    margin-top: 12%;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+
+
 .left_panel-container{
     background-color: #f5f5f5;
     position: relative;
     z-index: 1;
     box-shadow: 0px 0px 4px rgb(196, 196, 196);
-}
-.lateral_panel-icon img{
-    height: 100%;
 }
 
 
@@ -128,3 +137,77 @@ header{
 
 /* ESTILOS DE LA PLANTILLA DE VENTAS */
 
+.back_button-container{
+    height: 50px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+}
+.back_button-container:hover{
+    transform:scale(1.2)
+}
+.back_button-container img{
+    height: 100%;
+}
+
+/* Barra de búsqueda */
+.search_wrapper{
+    width: 60%;
+}
+
+.recomendaciones_drop{
+    width: 83%;
+}
+
+@media screen and (min-width: 1400px){
+    .recomendaciones_drop{
+        width: 85%;
+    }
+}
+
+
+@media screen and (max-width: 1024px){
+    .search_wrapper{
+        width: 75%;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    .recomendaciones_drop{
+        width: 75%;
+    }
+}
+
+body{
+    background-color: #f8f9fa;
+}
+
+.custom_spinner-css{
+    height: 28px;
+    width: 28px;
+}
+.custom_spinner-css span{
+    height: inherit;
+    width: inherit;
+}
+
+.btn_cerrar_venta-container{
+    width: 100%;
+    padding-right: 5%;
+    flex-direction: column;
+    align-items: center;
+}
+.printing-signal{
+    height: 10px;
+    width: 10px;
+}
+.printing-advice{
+    margin-left: 22px;
+}
+
+#logout_icon{
+    height: 25px;
+    width: 25px;
+    margin-bottom: 2px;
+}

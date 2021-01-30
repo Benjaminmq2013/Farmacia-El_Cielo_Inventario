@@ -103,12 +103,12 @@ const venta_window = (`
                     <div class="search_wrapper">
                         
                         <div class="input-group mb-3">
-                            <input id="prediction_input" type="text" class="form-control dropdown-toggle" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1" data-bs-toggle="dropdown" aria-expanded="false">
-                            <button class="btn btn-outline-secondary" type="button" id="button-addon1">+ Agregar</button>
+                            <input id="prediction_input" type="text" class="form-control dropdown-toggle" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1" data-bs-toggle="dropdown" aria-expanded="false" autocomplete="off">
+                            <button class="btn btn-outline-secondary btn_add_product" type="button" id="button-addon1">+ Agregar</button>
                             <ul class="recomendaciones_drop dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <li><a class="prediction_1 dropdown-item" href="#">Predicción 1...</a></li>
-                                <li><a class="prediction_2 dropdown-item" href="#">Predicción 2...</a></li>
-                                <li><a class="prediction_3 dropdown-item" href="#">Predicción 3...</a></li>
+                                <li><a class="prediction_1 dropdown-item" href="#">...</a></li>
+                                <li><a class="prediction_2 dropdown-item" href="#"></a></li>
+                                <li><a class="prediction_3 dropdown-item" href="#"></a></li>
                             </ul>
                         </div>
         
@@ -138,21 +138,15 @@ const venta_window = (`
                         </tr>
                       </thead>
 
-                      <tbody>
-                        <tr>
+                      <tbody class="tabla_comprando-body">
+                        <tr class="first_tr">
                           <th scope="row">1</th>
                           <td>Viagra</td>
                           <td>Problemas erectiles</td>
                           <td>$99.99</td>
                           <td>10.00</td>
                         </tr>
-                        <tr>
-                          <th scope="row">2</th>
-                          <td>Problemas </td>
-                          <td>Otto</td>
-                          <td>@mdo</td>
-                          <td>1.00</td>
-                        </tr>
+                        
                       </tbody>
 
                       <tfoot>
@@ -189,3 +183,29 @@ const venta_window = (`
         </div>
 
 `)
+
+
+
+//Creando todos los atributos para la tabla
+let compra_number= 0;
+let compra_name = "";
+let compra_details= "";
+let compra_price= 0;
+let compra_cantidad= 0;
+
+function callback_construir_tabla(){
+  const comprar_producto_tabla = (`  
+    <th scope="row">${compra_number}</th>
+    <td>${compra_name}</td>
+    <td>${compra_details}</td>
+    <td>${compra_price}</td>
+    <td>${compra_cantidad}</td>  
+  `)
+  //Llamando a la función construir tabla para añadir el innerHTML en el "body" de la tabla. (Origen en search.js)
+  if (compra_name == ""){
+
+  }else{
+    agregar_tabla(comprar_producto_tabla) 
+  }
+
+}

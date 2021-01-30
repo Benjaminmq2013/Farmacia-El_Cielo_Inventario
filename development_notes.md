@@ -1,1 +1,0 @@
-***Cambiar startsWith() por includes()***

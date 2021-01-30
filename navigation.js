@@ -38,7 +38,7 @@ function mostrar_ventana(){
     ventana_button.classList.add("active_menu")
 
     //Estos callbacks ejecutan los scripts de las funciones para "ventas"
-    ballback_activate_search()
+    callback_activate_search()
     callback_ventas_estilos()
 
     //Funciones activas de la ventana "ventas"

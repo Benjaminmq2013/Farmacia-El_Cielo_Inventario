@@ -42,14 +42,14 @@ const menu_window = (`
         <div class="col main_menu-container">
 
             <div class="row">
-                <div class="col text-center">
+                <div class="col text-center menu_buttons_container">
                     <figure class="menu_button">
                         <img id="vender_btn-icon" src="./assets/shopping_car.png" alt="">
                         <img id="forward_arrow-sell" src="./assets/forward_signal.png">
                     </figure>
                     <a class="main_buttons-title">Vender</a> 
                 </div>
-            <div class="col text-center">
+            <div class="col text-center menu_buttons_container">
                 <figure class="menu_button">
                     <img id="info_image" src="./assets/info_icon.png" alt="">
                     <img id="forward_arrow-info" src="./assets/forward_signal.png">
@@ -59,7 +59,7 @@ const menu_window = (`
             </div>
             
             <div class="row">
-            <div class="col text-center">
+            <div class="col text-center menu_buttons_container">
                 <figure class="menu_button">
                     <img id="inventory_image" src="./assets/inventory_checked.png" alt="">
                     <img id="forward_arrow-inventory" src="./assets/forward_signal.png">

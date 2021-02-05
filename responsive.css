@@ -39,7 +39,9 @@
         border-radius: 50px;
         background-color:#e8eaed;
         margin-bottom: 0;
-        
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .main_menu-container{
@@ -47,4 +49,22 @@
         padding-left: 0;
         padding-right: 25px;
     }
+}
+
+@media screen and (max-width:480px){
+    .menu_button img {
+        height: 100%;
+        margin-left: 0;
+    }
+    .menu_buttons_container{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .menu_button{
+        height: 90px;
+    }
+    .main_menu-container {
+        margin: 9% 7% 5% 3%;
+    }
+    
 }

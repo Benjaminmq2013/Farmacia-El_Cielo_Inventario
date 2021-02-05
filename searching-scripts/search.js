@@ -30,7 +30,14 @@ function callback_activate_search(){
 
             
             
-            let contenido = (`${medicamentos[i].nombre} Precio: $${medicamentos[i].precio}`) //Nombre y Precio / Producto.
+            let contenido = (`
+                
+                <p>${medicamentos[i].nombre}</p>
+                <p>marca</p>
+                <p>$${medicamentos[i].precio}</p>
+                <p>#Disponibles</p>
+
+            `) //Nombre y Precio / Producto.
             let nombre_a_comparar = (medicamentos[i].nombre).toUpperCase()
             
             

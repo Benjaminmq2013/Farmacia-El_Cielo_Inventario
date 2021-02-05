@@ -267,3 +267,22 @@ body{
     margin-left: 14px;
     cursor: pointer;
 }
+
+l.search_result-item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.prediction_1, .prediction_2, .prediction_3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prediction_1, .prediction_2, .prediction_3 p{
+    margin: 0;
+}
+
+ul li p{
+    margin: 0;
+}

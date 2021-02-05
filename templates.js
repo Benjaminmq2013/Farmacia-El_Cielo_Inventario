@@ -3,7 +3,7 @@
 //PLANTILLA DEL MENÚ PRINCIPAL
 const menu_window = (`
     
-        <div class="row">
+        <div class="row menu_principal_container">
 
         <!--Inicio del panel lateral-->
         <div class="left_panel-container col-3 pe-0 ps-0">

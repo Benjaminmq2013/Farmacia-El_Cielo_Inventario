@@ -33,7 +33,7 @@
     }
     .fila_lateral{
         flex-direction: column;
-        width: 92px;
+        width: 192px;
     }
     .lateral_panel-icon{
         border-radius: 50px;
@@ -78,4 +78,8 @@
         overflow: hidden;
     }
     
+}
+
+@media screen and (max-width:370px){
+
 }

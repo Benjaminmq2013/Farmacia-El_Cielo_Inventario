@@ -59,12 +59,23 @@
     .menu_buttons_container{
         padding-left: 0;
         padding-right: 0;
+        width: 50vw!important;
     }
     .menu_button{
         height: 90px;
+        text-align: center;
     }
     .main_menu-container {
-        margin: 9% 7% 5% 3%;
+        margin: 9% 0% 5% 3%;
+        
+        /*width: 309px;*/
+        padding-right: 0;
+        margin-left: 0!important;
+        padding-right:11%;
+        padding-left:  6%;
+    }
+    .menu_principal_container{
+        overflow: hidden;
     }
     
 }

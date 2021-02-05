@@ -33,6 +33,7 @@ mostrar_menu()
 
 
 
+
 // Mostrar ventana de Ventas:
 function mostrar_ventana(){
     main_content.innerHTML = `` //Reseteando el contenido del contenedor
@@ -51,6 +52,9 @@ function mostrar_ventana(){
 
     //Estilizaciones extra
     estilizar_tabla_margin()
+
+    //Reseteando valores de la tabla
+    reset_table_values()
 }
 
 
@@ -66,4 +70,11 @@ function mostrar_inventario(){
     inventory_button.classList.add("active_menu")
     ventana_button.classList.remove("active_menu")
     menu_button.classList.remove("active_menu")
+
+    //Activando funciones del inventario (origen en inventory.js)
+    inventory_management()
+
+
+    //Estilos para los botones de edición. (Definida en styles.js)
+    inventory_icons_style()
 }

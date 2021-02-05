@@ -29,3 +29,42 @@ function estilizar_tabla_margin(){
 
     })
 }
+
+
+
+
+//Estilizando los íconos del inventario
+function inventory_icons_style(){
+
+    //Botón editar
+    const db_edit_icon = document.querySelector(".db_edit_icon")
+    db_edit_icon.addEventListener("mouseover", ()=>{
+        db_edit_icon.src=("./assets/database/edit_product_green.png")
+    })
+
+    db_edit_icon.addEventListener("mouseout", ()=>{
+        db_edit_icon.src=("./assets/database/edit_product.png")
+    })
+
+
+    //Botón añadir
+    const db_add_icon = document.querySelector(".db_add_icon");
+    db_add_icon.addEventListener("mouseover", ()=>{
+        db_add_icon.src=("./assets/database/add_blue_icon.png")
+    })
+
+    db_add_icon.addEventListener("mouseout", ()=>{
+        db_add_icon.src=("./assets/database/add_dark_icon.png")
+    })
+
+
+    //Botón eliminar
+    const db_delete_icon = document.querySelector(".db_delete_icon");
+    db_delete_icon.addEventListener("mouseover", ()=>{
+        db_delete_icon.src=("./assets/database/close_red_icon.png")
+    })
+
+    db_delete_icon.addEventListener("mouseout", ()=>{
+        db_delete_icon.src=("./assets/database/close_dark_icon.png")
+    })
+}

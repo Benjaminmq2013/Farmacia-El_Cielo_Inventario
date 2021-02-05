@@ -269,8 +269,8 @@ const inventory_window=(`
 
     <div class="container inventory_input-container mt-4">
       <div class="input-group mb-3">
-        <span class="input-group-text" id="inputGroup-sizing-default">Buscar</span>
-        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        <span class="input-group-text" id="inventory_search_btn">Buscar</span>
+        <input id="inventory_search_input" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
       </div>
     </div>
     
@@ -285,12 +285,10 @@ const inventory_window=(`
               <th scope="col">Nombre</th>
               <th scope="col">Código</th>
               <th scope="col">$Compra</th>
-              <th scope="col">$Venta</th>
-              
-              <th scope="col">Heading</th>
-              <th scope="col">Heading</th>
-              <th scope="col">Heading</th>
-              <th scope="col">Heading</th>
+              <th scope="col">$Venta</th>              
+              <th scope="col">Existencias</th>
+              <th scope="col">Opciones</th>
+                           
             </tr>
           </thead>
           
@@ -302,37 +300,19 @@ const inventory_window=(`
               <td>Cell</td>
               <td>Cell</td>
               <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
+
+              <td>
+                <img class="db_edit_icon" src="./assets/database/edit_product.png" alt="">
+                <img class="db_add_icon ms-3" src="./assets/database/add_dark_icon.png" alt="">
+                <img class="db_delete_icon" src="./assets/database/close_dark_icon.png" alt="">
+              </td>
               
+
             </tr>
 
-            <tr>
-              <th scope="row">2</th>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              
-            </tr>
+            
 
-            <tr>
-              <th scope="row">3</th>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              
-            </tr>
+            
           </tbody>
         </table>
       </div>

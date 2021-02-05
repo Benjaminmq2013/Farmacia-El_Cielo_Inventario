@@ -76,13 +76,12 @@ function callback_activate_search(){
             //Asignando valores para crear la tabla
             
             compra_name = tres_prod_seleccionados[2].nombre;
+            compra_price = tres_prod_seleccionados[2].precio;
             
-        }
+        }    
         
-        //console.log(tres_prod_seleccionados[2]) //Elemento de la base de datos clicado
         
-        console.log(compra_name)
-        //console.log(comprar_producto_tabla)
+       
     }
 
     function añadir_producto_2(){
@@ -93,7 +92,8 @@ function callback_activate_search(){
             prediction_input.value = prediction_number_2.innerHTML;
            
             
-            compra_name = tres_prod_seleccionados[3].nombre;  
+            compra_name = tres_prod_seleccionados[3].nombre;
+            compra_price = tres_prod_seleccionados[3].precio;  
         }
         console.log(compra_name)
     }
@@ -107,6 +107,7 @@ function callback_activate_search(){
 
             
             compra_name = tres_prod_seleccionados[4].nombre;  
+            compra_price = tres_prod_seleccionados[4].precio;
         }      
         console.log(compra_name)
     }
@@ -137,7 +138,6 @@ function agregar_tabla(contenido_tabla){
 }
 
 
-//Si el número de tabla es mayor a 1 entonces insertBefore()
 
 
 

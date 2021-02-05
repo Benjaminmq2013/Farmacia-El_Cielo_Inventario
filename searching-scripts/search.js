@@ -74,8 +74,9 @@ function callback_activate_search(){
             prediction_input.value = prediction_number_1.innerHTML;
 
             //Asignando valores para crear la tabla
-            compra_number += 1;
+            
             compra_name = tres_prod_seleccionados[2].nombre;
+            
         }
         
         //console.log(tres_prod_seleccionados[2]) //Elemento de la base de datos clicado
@@ -90,6 +91,8 @@ function callback_activate_search(){
         } else{
             console.log(prediction_number_2.innerHTML)
             prediction_input.value = prediction_number_2.innerHTML;
+           
+            
             compra_name = tres_prod_seleccionados[3].nombre;  
         }
         console.log(compra_name)
@@ -101,6 +104,8 @@ function callback_activate_search(){
         } else{
             console.log(prediction_number_3.innerHTML)
             prediction_input.value = prediction_number_3.innerHTML;
+
+            
             compra_name = tres_prod_seleccionados[4].nombre;  
         }      
         console.log(compra_name)
@@ -110,8 +115,8 @@ function callback_activate_search(){
 
     //Llamando la función para añadir producto seleccionado a la tabla-resumen de esta venta.
     const btn_add_product = document.querySelector(".btn_add_product");
-    btn_add_product.addEventListener("click", callback_construir_tabla)
-
+    btn_add_product.addEventListener("click", callback_construir_tabla) //Callback existe en templates.js
+    btn_add_product.addEventListener("click", estilizar_tabla)// Función existe en styles.js
     
 }
 

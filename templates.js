@@ -45,12 +45,14 @@ const menu_window = (`
                 <div class="col text-center">
                     <figure class="menu_button">
                         <img id="vender_btn-icon" src="./assets/shopping_car.png" alt="">
+                        <img id="forward_arrow-sell" src="./assets/forward_signal.png">
                     </figure>
                     <a class="main_buttons-title">Vender</a> 
                 </div>
             <div class="col text-center">
                 <figure class="menu_button">
-                    <img src="./assets/info_icon.png" alt="">
+                    <img id="info_image" src="./assets/info_icon.png" alt="">
+                    <img id="forward_arrow-info" src="./assets/forward_signal.png">
                 </figure>                  
                 <a class="main_buttons-title">Resumen <br>de<br>Ventas</a>    
             </div>                
@@ -59,7 +61,8 @@ const menu_window = (`
             <div class="row">
             <div class="col text-center">
                 <figure class="menu_button">
-                    <img src="./assets/inventory_checked.png" alt="">
+                    <img id="inventory_image" src="./assets/inventory_checked.png" alt="">
+                    <img id="forward_arrow-inventory" src="./assets/forward_signal.png">
                 </figure>
                 <a class="main_buttons-title">Inventario</a> 
             </div>
@@ -139,20 +142,14 @@ const venta_window = (`
                       </thead>
 
                       <tbody class="tabla_comprando-body">
-                        <tr class="first_tr">
-                          <th scope="row">1</th>
-                          <td>Viagra</td>
-                          <td>Problemas erectiles</td>
-                          <td>$99.99</td>
-                          <td>10.00</td>
-                        </tr>
+                       
                         
                       </tbody>
 
                       <tfoot>
                         <tr>
-                          <th scope="row">1</th>
-                          <td>Mark</td>
+                          <th scope="row">Total:</th>
+                          <td></td>
                           <td>--</td>
                           <td>$99.99</td>
                         </tr>
@@ -161,8 +158,8 @@ const venta_window = (`
                     </table>
                   </div>
 
-                  <div class="btn_cerrar_venta-container container d-flex">
-                    <button type="button text-center" class="btn btn-primary">Realizar Venta</button>
+                  <div class="btn_cerrar_venta-container container d-flex mt-4">
+                    <button id="realizar_venta_btn" type="button text-center" class="btn btn-primary">Realizar Venta</button>
 
                     <div class="printing-advice d-flex align-items-center mb-3">
                       <p class="mb-0">Imprimiendo...</p>
@@ -187,11 +184,11 @@ const venta_window = (`
 
 
 //Creando todos los atributos para la tabla
-let compra_number= 0;
+let compra_number= 1;
 let compra_name = "";
 let compra_details= "";
 let compra_price= 0;
-let compra_cantidad= 0;
+let compra_cantidad= 1.00;
 
 function callback_construir_tabla(){
   const comprar_producto_tabla = (`  
@@ -205,7 +202,144 @@ function callback_construir_tabla(){
   if (compra_name == ""){
 
   }else{
-    agregar_tabla(comprar_producto_tabla) 
+    agregar_tabla(comprar_producto_tabla); 
+    prediction_input.value = ("");
+    compra_name = "";
+    compra_number++
   }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+const inventory_window=(`
+
+  <div class="row">
+
+  <!--Inicio del panel lateral-->
+  <div class="left_panel-container col-3 pe-0 ps-0">
+
+      <div class="fila_lateral d-flex align-items-center">
+          <figure class="lateral_panel-icon">
+              <img src="./assets/packages_icon.png" alt="">
+          </figure>
+          <label>Existencias</label>
+      </div>
+
+      <div class="fila_lateral d-flex align-items-center">
+        <figure class="lateral_panel-icon">
+            <img src="./assets/plus_icon-orange.png" alt="">
+        </figure>
+        <label>Crear Producto</label>
+      </div>
+
+    <div class="fila_lateral d-flex align-items-center">
+      <figure class="lateral_panel-icon">
+          <img src="./assets/offer.png" alt="">
+      </figure>
+      <label>Crear Ofertas</label>
+    </div>
+
+    <div class="fila_lateral d-flex align-items-center">
+      <figure class="lateral_panel-icon">
+          <img src="./assets/chart_icon.png" alt="">
+      </figure>
+      <label>Estadísticas</label>
+    </div>
+
+      
+
+      
+
+  </div>
+
+
+  <div class="col inventory_container">
+
+      
+    <h2 class="text-center mt-4">Existencias</h2>
+
+    <div class="container inventory_input-container mt-4">
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-default">Buscar</span>
+        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+      </div>
+    </div>
+    
+
+    <div class="container table_container mt-2">
+      <div class="table-responsive">
+        <table class="table">
+
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">Código</th>
+              <th scope="col">$Compra</th>
+              <th scope="col">$Venta</th>
+              
+              <th scope="col">Heading</th>
+              <th scope="col">Heading</th>
+              <th scope="col">Heading</th>
+              <th scope="col">Heading</th>
+            </tr>
+          </thead>
+          
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+              
+            </tr>
+
+            <tr>
+              <th scope="row">2</th>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+              
+            </tr>
+
+            <tr>
+              <th scope="row">3</th>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+              
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+
+
+  </div>
+`)
+

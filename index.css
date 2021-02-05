@@ -99,6 +99,8 @@ header{
     position: relative;
     z-index: 1;
     box-shadow: 0px 0px 4px rgb(196, 196, 196);
+
+    height: 87vh;
 }
 
 
@@ -133,12 +135,32 @@ header{
     margin-bottom: 8%;
     margin-right: 8%;
 }
+#forward_arrow-sell{
+    height: 80%;
+}
+#vender_btn-icon{
+    margin-left: 33px;
+}
 
 
+#forward_arrow-info{
+    height: 80%;
+}
+#info_image{
+    margin-left: 34px;
+}
+
+
+#forward_arrow-inventory{
+    height: 80%;
+}
+#inventory_image{
+    margin-left: 34px;
+}
 /* ESTILOS DE LA PLANTILLA DE VENTAS */
 
 .back_button-container{
-    height: 50px;
+    height: 60px;
     font-weight: 500;
     cursor: pointer;
     transition: .3s;
@@ -157,6 +179,17 @@ header{
 
 .recomendaciones_drop{
     width: 83%;
+}
+
+
+/* ESTILOS DEL INVENTARIO */
+.inventory_input-container div{
+    width: 80%;
+}
+
+.inventory_input-container{
+    display: flex;
+    justify-content: center;
 }
 
 @media screen and (min-width: 1400px){

@@ -9,6 +9,9 @@ menu_button.addEventListener("click", mostrar_menu) //Mostrando menú
 const ventana_button = document.getElementById("ventana_button", mostrar_ventana)
 ventana_button.addEventListener("click", mostrar_ventana)
 
+const inventory_button = document.getElementById("inventory_button");
+inventory_button.addEventListener("click", mostrar_inventario)
+
 
 
 
@@ -20,6 +23,7 @@ function mostrar_menu(){
     
     menu_button.classList.add("active_menu")
     ventana_button.classList.remove("active_menu")
+    inventory_button.classList.remove("active_menu")
 
 
     const vender_btn_icon = document.getElementById("vender_btn-icon")
@@ -34,7 +38,7 @@ function mostrar_ventana(){
     main_content.innerHTML = `` //Reseteando el contenido del contenedor
     main_content.innerHTML = venta_window;
     menu_button.classList.remove("active_menu")
-//remover a inventario también
+    inventory_button.classList.remove("active_menu")
     ventana_button.classList.add("active_menu")
 
     //Estos callbacks ejecutan los scripts de las funciones para "ventas"
@@ -44,8 +48,22 @@ function mostrar_ventana(){
     //Funciones activas de la ventana "ventas"
     const back_button_container = document.querySelector(".back_button-container")
     back_button_container.addEventListener("click", mostrar_menu)
+
+    //Estilizaciones extra
+    estilizar_tabla_margin()
 }
 
 
 
 
+
+
+function mostrar_inventario(){
+    main_content.innerHTML = ``
+    main_content.innerHTML = inventory_window;
+
+
+    inventory_button.classList.add("active_menu")
+    ventana_button.classList.remove("active_menu")
+    menu_button.classList.remove("active_menu")
+}

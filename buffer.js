@@ -1,0 +1,1 @@
+//Memoria en que se guardan los datos de las ventanas para no perder información.

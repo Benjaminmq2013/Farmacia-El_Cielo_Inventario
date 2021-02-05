@@ -75,6 +75,10 @@ function mostrar_inventario(){
     inventory_management()
 
 
+    //buscar_medicamentos_inventario()
+    
+    
+    
     //Estilos para los botones de edición. (Definida en styles.js)
-    inventory_icons_style()
+    //inventory_icons_style()
 }

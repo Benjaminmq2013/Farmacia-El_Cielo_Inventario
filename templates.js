@@ -238,7 +238,7 @@ const inventory_window=(`
         <figure class="lateral_panel-icon">
             <img src="./assets/plus_icon-orange.png" alt="">
         </figure>
-        <label>Crear Producto</label>
+        <label>Añadir Producto</label>
       </div>
 
     <div class="fila_lateral d-flex align-items-center">
@@ -292,7 +292,8 @@ const inventory_window=(`
             </tr>
           </thead>
           
-          <tbody>
+          <tbody id="inventory_tbody">
+
             <tr>
               <th scope="row">1</th>
               <td>Cell</td>

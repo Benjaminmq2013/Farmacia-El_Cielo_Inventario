@@ -245,7 +245,7 @@ body{
     margin-bottom: 2px;
 }
 
-.table_container{
+#inventory_table_container{
     max-height: 400px;
     overflow: scroll;
 }

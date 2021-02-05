@@ -81,7 +81,7 @@ const menu_window = (`
 `)
 
 
-
+let total_venta = 0;
 const venta_window = (`
 <div class="vender_menu-container position-relative">
           <div class="row">
@@ -151,7 +151,7 @@ const venta_window = (`
                           <th scope="row">Total:</th>
                           <td></td>
                           <td>--</td>
-                          <td>$99.99</td>
+                          <td id="total_venta_td">0</td>
                         </tr>
                       </tfoot>
 
@@ -208,6 +208,10 @@ function callback_construir_tabla(){
     compra_number++
   }
 
+  //Total de esta venta:
+  let total_venta_td = document.getElementById("total_venta_td");
+  total_venta = total_venta + compra_price;
+  total_venta_td.innerHTML = (`$${total_venta}`);
 }
 
 
@@ -270,12 +274,12 @@ const inventory_window=(`
     <div class="container inventory_input-container mt-4">
       <div class="input-group mb-3">
         <span class="input-group-text" id="inventory_search_btn">Buscar</span>
-        <input id="inventory_search_input" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        <input id="inventory_search_input" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Buscar por nombre...">
       </div>
     </div>
     
 
-    <div class="container table_container mt-2">
+    <div id="inventory_table_container" class="container table_container mt-2">
       <div class="table-responsive">
         <table class="table">
 
@@ -283,6 +287,7 @@ const inventory_window=(`
             <tr>
               <th scope="col">#</th>
               <th scope="col">Nombre</th>
+              <th scope="col">Marca</th>
               <th scope="col">Código</th>
               <th scope="col">$Compra</th>
               <th scope="col">$Venta</th>              

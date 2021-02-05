@@ -246,7 +246,8 @@ body{
 }
 
 .table_container{
-    /*Estilos de la tabla*/
+    max-height: 400px;
+    overflow: scroll;
 }
 
 

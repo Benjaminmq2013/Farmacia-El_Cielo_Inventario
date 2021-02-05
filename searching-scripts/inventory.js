@@ -47,7 +47,7 @@ function inventory_management(){
     
     function construir_tablas_inventario(inventory_products){
         // DATOS DE PRODUCTOS PARA EL INVENTARIO
-        let inventory_product_number = "1"
+        let inventory_product_number = 0;
         let inventory_product_name = ""
         let inventory_product_$compra = 0;
         let inventory_product_$venta = 0;
@@ -61,8 +61,10 @@ function inventory_management(){
             
             inventory_product_name = inventory_products[count].nombre;
             inventory_product_$venta = inventory_products[count].precio;
+            inventory_product_number ++;
+            console.log(inventory_product_number)
             //console.log(inventory_products)
-            agregar_tabla_prueba(inventory_product_name, inventory_product_$venta)
+            agregar_tabla_prueba(inventory_product_name, inventory_product_$venta, inventory_product_number)
         }
 
 
@@ -81,15 +83,15 @@ function inventory_management(){
 
 
 
-mostrar_inventario()
 
 
 
 
-function agregar_tabla_prueba(inventory_product_name, inventory_product_$venta){
+
+function agregar_tabla_prueba(inventory_product_name, inventory_product_$venta, inventory_product_number){
     const inventory_tbody = document.getElementById("inventory_tbody") //Marco de las tablas
     const contenido = (`
-        <th scope="row">1</th>
+        <th scope="row">${inventory_product_number}</th>
         <td>${inventory_product_name}</td>
         <td>Cell</td>
         <td>Cell</td>
@@ -109,7 +111,7 @@ function agregar_tabla_prueba(inventory_product_name, inventory_product_$venta){
 
 
     inventory_tbody.appendChild(tr_object)
-    inventory_icons_style(); console.log("hola")
+    inventory_icons_style();
 }
-agregar_tabla_prueba()
+
 

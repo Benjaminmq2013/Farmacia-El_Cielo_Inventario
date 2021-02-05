@@ -26,7 +26,7 @@ const menu_window = (`
                 <figure class="lateral_panel-icon">
                     <img src="./assets/users_icon.png" alt="Empleados">
                 </figure>
-                <label>Usuarios/empleados</label>
+                <label>Empleados</label>
             </div>
 
             <div class="fila_lateral d-flex align-items-center">

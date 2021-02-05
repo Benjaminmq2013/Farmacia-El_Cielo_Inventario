@@ -26,9 +26,25 @@
         flex-direction: column;
     }
     .left_panel-container{
-        height: 7vh;
+        height: 10vh;
         width: 100vw;
         display: flex;
         overflow: auto;
+    }
+    .fila_lateral{
+        flex-direction: column;
+        width: 92px;
+    }
+    .lateral_panel-icon{
+        border-radius: 50px;
+        background-color:#e8eaed;
+        margin-bottom: 0;
+        
+    }
+
+    .main_menu-container{
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 25px;
     }
 }

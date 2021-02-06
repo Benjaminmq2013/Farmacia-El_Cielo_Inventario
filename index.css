@@ -100,7 +100,7 @@ header{
     z-index: 1;
     box-shadow: 0px 0px 4px rgb(196, 196, 196);
 
-    height: 87vh;
+    
 }
 
 
@@ -219,6 +219,7 @@ body{
 .custom_spinner-css{
     height: 28px;
     width: 28px;
+    opacity: 0;
 }
 .custom_spinner-css span{
     height: inherit;
@@ -237,6 +238,7 @@ body{
 }
 .printing-advice{
     margin-left: 22px;
+    opacity: 0;
 }
 
 #logout_icon{
@@ -437,4 +439,8 @@ body{
 }
 .total p{
     margin: 0;
+}
+
+#seleccion{
+    position: absolute;
 }

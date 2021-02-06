@@ -1,3 +1,8 @@
+@media screen and (min-width: 1366px){
+    .left_panel-container{
+        height: 87vh;
+    }
+}
 @media screen and (max-width:1024px){
     #main_content{        
         max-width: 899px;
@@ -8,6 +13,9 @@
     .navbar-collapse ul{
         flex-direction:row;
         margin-top: 10px;
+    }
+    .left_panel-container{
+        height: 87vh;
     }
 }
 

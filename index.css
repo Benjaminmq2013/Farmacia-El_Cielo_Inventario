@@ -435,3 +435,6 @@ body{
     justify-content: center;
     align-items: center;
 }
+.total p{
+    margin: 0;
+}

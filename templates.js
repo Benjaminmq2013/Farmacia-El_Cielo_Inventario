@@ -207,12 +207,15 @@ function callback_construir_tabla(){
     prediction_input.value = ("");
     compra_name = "";
     compra_number++
+
+
+      //Total de esta venta:
+    let total_venta_td = document.getElementById("total_venta_td");
+    total_venta = total_venta + compra_price;
+    total_venta_td.innerHTML = (`$${total_venta.toFixed(2)}`);
   }
 
-  //Total de esta venta:
-  let total_venta_td = document.getElementById("total_venta_td");
-  total_venta = total_venta + compra_price;
-  total_venta_td.innerHTML = (`$${total_venta.toFixed(2)}`);
+
 
  
 }
@@ -331,4 +334,5 @@ const inventory_window=(`
 
   </div>
 `)
+
 

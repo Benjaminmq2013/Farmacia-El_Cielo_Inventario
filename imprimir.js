@@ -32,7 +32,7 @@ function añadir_producto_ticket (tres_prod_seleccionados){
         } else{
             let product_name = tres_prod_seleccionados.nombre;
             let product_price = tres_prod_seleccionados.precio;
-            let product_quantity = 1;
+            let product_quantity = cuenta_num;
             
             console.log(tres_prod_seleccionados)
       
@@ -105,9 +105,14 @@ function imprimir_ticket(nombre){
     var ficha = document.getElementById(nombre);
     var ventimp = window.open(' ', 'popimpr');
     ventimp.document.write( ficha.innerHTML );
-    ventimp.document.close();
-    /*
-    ventimp.print( );
-    ventimp.close();*/
+    ventimp.document.close();    
+
+    ventimp.onload = function(){
+        ventimp.print();
+        ventimp.close();
+    }
+        
+    
     console.log(ventimp)
 }
+

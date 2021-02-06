@@ -289,3 +289,149 @@ l.search_result-item{
 ul li p{
     margin: 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*************************  ESTILOS PARA PRUEBA DEL TICKET  **************************/
+body{
+    margin: 0;
+}
+.ticket_container_prueba{
+    height: 400px;
+    width: 200px;
+    background-color: white;
+    z-index: 3;
+    position: absolute;
+    left:0;
+    top: 0;
+    
+    
+}
+
+/*ESTILOS DEL TICKET*/
+
+.ticket_wrapper{
+    position: relative;
+    min-height: 288px;    
+}
+
+.fecha_venta{
+    margin-top: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ticket_title{
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.ticket_location{
+    font-size: 12px;
+    margin: 0;
+}
+
+.ticket_date{
+    font-size: 14px;
+    margin: 0;
+}
+
+.detalles_venta{
+    display: flex;    
+    padding: 0 10px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-top: 14px;
+}
+
+.detalles_venta h6{
+    font-size: 14px;
+    margin: 0;
+}
+
+.ticket_product_component{
+    border-bottom: 1px solid black;
+    padding: 0 10px;
+    display: flex;
+    font-size: 14px;
+}
+
+.cantidad_container{
+    width: 25%;
+}
+.producto_container{
+    width: 60%;
+}
+
+.precio_container{
+    width: 15%;
+    text-align: right;
+}
+.facturacion_ticket{
+    display: flex;
+    font-size: 14px;
+    height: 31px;
+}
+.facturacion_titulo{
+    width: 85%;
+    text-align: center;
+    padding-left: 10px;
+}
+.ticket_footer{
+    font-size: 14px;
+    text-align: center;
+}
+.ticket_el_cielo{
+    font-size: 13px;
+    margin: 0;
+}
+.ticket_agradecimientos{
+    margin: 0;
+}
+
+.cant_container{
+    width: 25%;
+}
+.prod_container{
+    width: 60%;
+}
+
+.prec_container{
+    width: 15%;
+}
+
+.facturacion_wrapper{
+    position: relative;
+    bottom: 0;
+    margin-bottom: 10px;
+}
+
+
+.no-display{
+    display: none;
+}
+.ticket_logo img{
+    height: 117px;
+}
+
+.ticket_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

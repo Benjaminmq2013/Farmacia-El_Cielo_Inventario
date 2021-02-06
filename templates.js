@@ -159,8 +159,9 @@ const venta_window = (`
                   </div>
 
                   <div class="btn_cerrar_venta-container container d-flex mt-4">
-                    <button id="realizar_venta_btn" type="button text-center" class="btn btn-primary">Realizar Venta</button>
-
+                  <a href="javascript:imprimir_ticket('seleccion')">
+                      <button id="realizar_venta_btn" type="button text-center" class="btn btn-primary">Realizar Venta</button>
+                    </a>
                     <div class="printing-advice d-flex align-items-center mb-3">
                       <p class="mb-0">Imprimiendo...</p>
                       <div class="printing-signal spinner-grow text-primary ms-2" role="status">

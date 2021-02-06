@@ -58,8 +58,7 @@ function mostrar_ventana(){
     //Reseteando valores de la tabla
     reset_table_values()
 
-    //Activando variables y funciones de impresión
-    activar_impresiones()
+    
 }
 
 

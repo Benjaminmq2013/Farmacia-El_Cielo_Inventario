@@ -30,6 +30,7 @@ function callback_activate_search(){
 
             
             let contenido_seleccionado = (`${medicamentos[i].nombre} Precio: $${medicamentos[i].precio}`)
+            
             let contenido = (`
                 
                 <p>${medicamentos[i].nombre}</p>
@@ -84,12 +85,13 @@ function callback_activate_search(){
             
             compra_name = tres_prod_seleccionados[2].nombre;
             compra_price = tres_prod_seleccionados[2].precio;
-            
+
+            añadir_producto_ticket(tres_prod_seleccionados[2]) //Construyendo ticket (origen en imprimir.js)
         }    
-        
-        
-       
     }
+
+
+
 
     function añadir_producto_2(){
         if (prediction_number_2.innerHTML == ""){
@@ -101,9 +103,13 @@ function callback_activate_search(){
             
             compra_name = tres_prod_seleccionados[3].nombre;
             compra_price = tres_prod_seleccionados[3].precio;  
+            añadir_producto_ticket(tres_prod_seleccionados[3]) //Construyendo ticket (origen en imprimir.js)
         }
         console.log(compra_name)
     }
+
+
+
 
     function añadir_producto_3(){  
         if (prediction_number_3.innerHTML == ""){
@@ -115,6 +121,8 @@ function callback_activate_search(){
             
             compra_name = tres_prod_seleccionados[4].nombre;  
             compra_price = tres_prod_seleccionados[4].precio;
+
+            añadir_producto_ticket(tres_prod_seleccionados[4]) //Construyendo ticket (origen en imprimir.js)
         }      
         console.log(compra_name)
     }
@@ -142,6 +150,8 @@ function agregar_tabla(contenido_tabla){
     console.log(contenido_tabla)
 
     tabla_comprando_body.appendChild(tr)
+
+    añadir_producto_ticket() //Construyendo el ticket (origen en imprimir.js)
 }
 
 

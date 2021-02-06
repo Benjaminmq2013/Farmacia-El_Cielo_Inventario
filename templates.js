@@ -213,6 +213,8 @@ function callback_construir_tabla(){
   let total_venta_td = document.getElementById("total_venta_td");
   total_venta = total_venta + compra_price;
   total_venta_td.innerHTML = (`$${total_venta.toFixed(2)}`);
+
+ 
 }
 
 

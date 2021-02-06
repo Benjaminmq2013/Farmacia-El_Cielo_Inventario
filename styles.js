@@ -17,8 +17,7 @@ function callback_ventas_estilos(){
 
 
 function estilizar_tabla(){
-    const btn_cerrar_venta_container = document.querySelector(".btn_cerrar_venta-container")
-    btn_cerrar_venta_container.classList.remove("mt-4")
+    
 }
 
 function estilizar_tabla_margin(){

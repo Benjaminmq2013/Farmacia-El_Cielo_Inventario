@@ -249,7 +249,10 @@ body{
     max-height: 400px;
     overflow: scroll;
 }
-
+.table_container{
+    max-height: 246px;
+    overflow: auto;
+}
 
 /* ESTILOS DEL INVENTARIO */
 .db_edit_icon{

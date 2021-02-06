@@ -96,7 +96,7 @@ function agregar_tabla_prueba(inventory_product_name, inventory_product_$venta, 
         <td>Cell</td>
         <td>Cell</td>
         <td>Cell</td>
-        <td>${inventory_product_$venta}</td>
+        <td>$${inventory_product_$venta}</td>
         <td>Cell</td>
 
         <td>

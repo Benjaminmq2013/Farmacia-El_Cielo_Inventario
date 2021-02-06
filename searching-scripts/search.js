@@ -29,7 +29,7 @@ function callback_activate_search(){
             
 
             
-            
+            let contenido_seleccionado = (`${medicamentos[i].nombre} Precio: $${medicamentos[i].precio}`)
             let contenido = (`
                 
                 <p>${medicamentos[i].nombre}</p>
@@ -45,7 +45,7 @@ function callback_activate_search(){
                 let prediction_number = document.querySelector(`.prediction_${pred_num++}`) //<li> para mostrar producto
                 
                 if (pred_num <= 4){
-                    prediction_number.innerHTML = contenido    
+                    prediction_number.innerHTML = contenido_seleccionado;    
                     tres_prod_seleccionados[pred_num] =(medicamentos[i])            
                 }
 

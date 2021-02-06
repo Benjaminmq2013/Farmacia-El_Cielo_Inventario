@@ -15,7 +15,6 @@ inventory_button.addEventListener("click", mostrar_inventario)
 
 
 
-
 //Dando contenido al main.
 
 function mostrar_menu(){
@@ -28,6 +27,9 @@ function mostrar_menu(){
 
     const vender_btn_icon = document.getElementById("vender_btn-icon")
     vender_btn_icon.addEventListener("click", mostrar_ventana)
+
+    const inventory_image = document.getElementById("inventory_image")
+    inventory_image.addEventListener("click", mostrar_inventario)
 }
 mostrar_menu()
 
@@ -55,6 +57,9 @@ function mostrar_ventana(){
 
     //Reseteando valores de la tabla
     reset_table_values()
+
+    //Activando variables y funciones de impresión
+    activar_impresiones()
 }
 
 

@@ -111,23 +111,23 @@ var agomelatina = {
 }
 var agua = {
     nombre: 'Agua',
-    precio: 1.00
+    precio: 50.00
 }
 var aminoven = {
     nombre: 'Aminoven',
-    precio: 1.00
+    precio: 10.99
 }
 var anasma = {
     nombre: 'Anasma',
-    precio: 1.00
+    precio: 11.97
 }
 var ateconol = {
     nombre: 'Ateconol',
-    precio: 1.00
+    precio: 20.89
 }
 var atropina = {
     nombre: 'Atropina',
-    precio: 1.00
+    precio: 1.47
 }
 
 var medicamentos = [

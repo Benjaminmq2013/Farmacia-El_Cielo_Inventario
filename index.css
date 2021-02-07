@@ -444,3 +444,18 @@ body{
 #seleccion{
     position: absolute;
 }
+
+
+
+
+
+/*ESTILOS DEL FOOTER*/
+footer p{
+    color: rgb(219, 219, 219);
+    margin: 0;
+    font-weight: 500;
+}
+
+footer p:hover{
+    color: rgb(219, 219, 219);
+}

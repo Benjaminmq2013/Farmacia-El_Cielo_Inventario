@@ -1,0 +1,11 @@
+{
+  "name": "farmacia",
+  "version": "0.1.0",
+  "description": "Sistema de administracion de inventario para la farmacia El Cielo",
+  "main": "./public/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adriel Benjamin Martinez, Aldair Cruz Zelaya",
+  "license": "MIT"
+}

@@ -92,6 +92,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="responsive.css">
+    <link rel="shortcut icon" href="./assets/estetoscopio_icon.png">
 
   </head>
 
@@ -186,10 +187,13 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <a href="#">Ayuda</a>
+            <p href="#">Ayuda</p>
           </div>
-          <div class="col">
-            <a href="#"></a>
+          <div class="col-2">
+            <p href="#">Ventas: 5</p>            
+          </div>
+          <div class="col-2">
+            <p href="">En Caja: $100</p>
           </div>
         </div>
       </div>
@@ -198,24 +202,28 @@
     
  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-    <script src="templates.js"></script>
-    <script src="./navigation.js"></script>
+    <script src="./scripts/templates.js"></script>
+    <script src="./scripts/navigation.js"></script>
 
     <!--Scripts de búsqueda (para ventas)-->
     <script src="./searching-scripts/search.js"></script>
     <script src="./searching-scripts/database.js"></script>
 
     <!--Script de estilos-->
-    <script src="./styles.js"></script>
+    <script src="./scripts/styles.js"></script>
 
     <!--Script de buffer (datos en memoria)-->
-    <script src="./buffer.js"></script>
+    <script src="./scripts/buffer.js"></script>
 
     <!--Script de funciones del inventario-->
     <script src="./searching-scripts/inventory.js"></script>
 
     <!--Script de impresión-->
-    <script src="./imprimir.js"></script>
+    <script src="./scripts/imprimir.js"></script>
+
+
+    <!--Script de las graficas de venta (chart.js)-->
+    <script src="./node_modules/chart.js/dist/Chart.bundle.min.js"></script>
 
   </body>
 </html>

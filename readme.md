@@ -1,7 +1,8 @@
-******* **Pre-requisitos:** ********
+******* **Pre-requisitos/Dependencias:** ********
 
 $ npm install
 $ bootstrap
+$ npm install chart.js --save
 
 
  ** **Secciones de la página principal:**  **

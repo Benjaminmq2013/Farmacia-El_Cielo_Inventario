@@ -58,7 +58,8 @@ function mostrar_ventana(){
     //Reseteando valores de la tabla
     reset_table_values()
 
-    
+    //Cuentas en el footer. Fué definida en imprimir.js
+    llevar_cuentas_footer()
 }
 
 
@@ -79,10 +80,6 @@ function mostrar_inventario(){
     inventory_management()
 
 
-    //buscar_medicamentos_inventario()
-    
-    
-    
-    //Estilos para los botones de edición. (Definida en styles.js)
-    //inventory_icons_style()
+    //Activando funciones de navegación interna del inventario.
+    activar_navegacion_inventario()
 }

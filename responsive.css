@@ -57,6 +57,17 @@
         padding-left: 0;
         padding-right: 25px;
     }
+    .container_custom-width{
+        margin-left: 0;
+        margin-right: 0;
+        padding-right: 0;
+        padding-left: 0;
+        max-width: initial;
+        width: 100%;
+    }
+    .col1_custom-zindex{
+        z-index: 2;
+    }
 }
 
 @media screen and (max-width:480px){
@@ -85,9 +96,18 @@
     .menu_principal_container{
         overflow: hidden;
     }
+    .main_logo{
+        margin-bottom: 14%;
+        margin-right: 4%;
+        height: 64px;
+    }
     
 }
 
 @media screen and (max-width:370px){
+    .main_logo{
+        height: 76px;
+        margin-bottom: 19%;
+    }
 
 }

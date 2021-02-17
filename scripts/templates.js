@@ -67,7 +67,7 @@ const menu_window = (`
                 <a class="main_buttons-title">Inventario</a> 
             </div>
             <div class="col">
-                <img class="main_logo" src="./assets/logo.png" alt="">
+              <img class="main_logo" src="./assets/logo_recortado.png" alt="">
             </div>
             </div>
 
@@ -85,7 +85,7 @@ let total_venta = 0;
 const venta_window = (`
 <div class="vender_menu-container position-relative">
           <div class="row">
-            <div class="col-1">
+            <div class="col-1 col1_custom-zindex">
               <figure class="back_button-container mt-4">
                 <img src="./assets/back_arrow.png" alt="">
               </figure>
@@ -100,13 +100,13 @@ const venta_window = (`
             </div>
 
             <div class="col-11">
-              <main class="bg-light pt-5 pb-2">
+              <main class="bg-light  pt-5 mt-5 mt-sm-0 pb-2">
                 <div class="container d-flex justify-content-center">
         
                     <div class="search_wrapper">
                         
                         <div class="input-group mb-3">
-                            <input id="prediction_input" type="text" class="form-control dropdown-toggle" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1" data-bs-toggle="dropdown" aria-expanded="false" autocomplete="off">
+                            <input id="prediction_input" type="text" class="form-control dropdown-toggle" placeholder="Buscar un producto..." aria-label="Example text with button addon" aria-describedby="button-addon1" data-bs-toggle="dropdown" aria-expanded="false" autocomplete="off">
                             <button class="btn btn-outline-secondary btn_add_product" type="button" id="button-addon1">+ Agregar</button>
                             <ul class="recomendaciones_drop dropdown-menu" aria-labelledby="dropdownMenuButton">
                                 <li><a class="prediction_1 dropdown-item" href="#">...</a></li>
@@ -125,7 +125,7 @@ const venta_window = (`
                 </div>
 
 
-                <div class="container">
+                <div class="container container_custom-width">
                   <h2 class="text-center mb-5 mt-4">Resumen de la venta</h2>
 
                   <div class="table_container container">
@@ -237,7 +237,7 @@ const inventory_window=(`
   <!--Inicio del panel lateral-->
   <div class="left_panel-container col-3 pe-0 ps-0">
 
-      <div class="fila_lateral d-flex align-items-center">
+      <div id="existencias_inventario_btn" class="fila_lateral d-flex align-items-center">
           <figure class="lateral_panel-icon">
               <img src="./assets/packages_icon.png" alt="">
           </figure>
@@ -258,7 +258,7 @@ const inventory_window=(`
       <label>Crear Ofertas</label>
     </div>
 
-    <div class="fila_lateral d-flex align-items-center">
+    <div id="estadisticas_inventario_btn" class="fila_lateral d-flex align-items-center">
       <figure class="lateral_panel-icon">
           <img src="./assets/chart_icon.png" alt="">
       </figure>

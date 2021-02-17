@@ -84,23 +84,7 @@ function añadir_producto_ticket (tres_prod_seleccionados){
 }
 
   //IMPRIMIENDO
-      
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
 function imprimir_ticket(nombre){    
     var ficha = document.getElementById(nombre);
     var ventimp = window.open(' ', 'popimpr');
@@ -113,6 +97,23 @@ function imprimir_ticket(nombre){
     }
         
     
+    
     console.log(ventimp)
+    mostrar_ventana()
 }
 
+let ventas = 0;
+let total_caja = 100;
+
+function llevar_cuentas_footer(){
+    ventas +=1;
+
+    const footer_ventas = document.getElementById("footer_ventas")
+    const footer_total = document.getElementById("footer_total")
+    realizar_venta_btn.addEventListener("click", ()=>{
+        total_caja = total_caja + total;
+        footer_ventas.innerHTML = (`Ventas: ${ventas}`)        
+        footer_total.innerHTML = (`En Caja: ${total_caja.toFixed(2)}`)
+    })
+
+}

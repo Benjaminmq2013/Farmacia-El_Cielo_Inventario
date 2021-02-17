@@ -97,9 +97,9 @@
   </head>
 
   <body>
-    <header>
-      <nav id="header" class="navbar navbar-expand-lg navbar-light background-custom">
-        <div class="container">
+    <header class="main_header">
+      <nav id="header" class="navbar navbar-expand-lg navbar-light background-custom pt-0 pb-0">
+        <div class="container container_custom_css">
          
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -134,38 +134,7 @@
     <main class="main">
       <div id="main_content" class="container">
 
-
-
-
-
-
         <!--COPIAR DESDE AQUÍ-->
-
-        
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
       </div>
     </main>
@@ -189,11 +158,11 @@
           <div class="col">
             <p href="#">Ayuda</p>
           </div>
-          <div class="col-2">
-            <p href="#">Ventas: 5</p>            
+          <div class="col-3 col-sm-2">
+            <p id="footer_ventas" href="#">Ventas: 0</p>            
           </div>
-          <div class="col-2">
-            <p href="">En Caja: $100</p>
+          <div class="col-3 col-sm-2">
+            <p id="footer_total" href="">En Caja: $100</p>
           </div>
         </div>
       </div>
@@ -225,8 +194,22 @@
     <!--Script de las graficas de venta (chart.js)-->
     <script src="./node_modules/chart.js/dist/Chart.bundle.min.js"></script>
 
+    <!--Navegación dentro del inventario-->
+    <script src="./scripts/inventory_internal_navigation.js"></script>
+
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
 
 
 

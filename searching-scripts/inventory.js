@@ -61,8 +61,7 @@ function inventory_management(){
             
             inventory_product_name = inventory_products[count].nombre;
             inventory_product_$venta = inventory_products[count].precio;
-            inventory_product_number ++;
-            console.log(inventory_product_number)
+            inventory_product_number ++;            
             //console.log(inventory_products)
             agregar_tabla_prueba(inventory_product_name, inventory_product_$venta, inventory_product_number)
         }
@@ -76,17 +75,6 @@ function inventory_management(){
 //Función para guardar los elementos de la búsqueda actual, por defecto guarda todos los disponibles.
 
 /* CONSTRUYENDO TABLAS PARA EL INVENTARIO */
-
-
-
-
-
-
-
-
-
-
-
 
 function agregar_tabla_prueba(inventory_product_name, inventory_product_$venta, inventory_product_number){
     const inventory_tbody = document.getElementById("inventory_tbody") //Marco de las tablas
